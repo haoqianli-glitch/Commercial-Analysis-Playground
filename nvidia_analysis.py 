@@ -1,0 +1,25 @@
+import yfinance as yf
+import matplotlib.pyplot as plt
+from datetime import datetime, timedelta
+
+# 下载过去一年的NVDA股票数据
+end_date = datetime.today()
+start_date = end_date - timedelta(days=365)
+nvda = yf.download('NVDA', start=start_date.strftime('%Y-%m-%d'), end=end_date.strftime('%Y-%m-%d'))
+
+# 绘制收盘价折线图
+plt.figure(figsize=(12, 6))
+plt.plot(nvda.index, nvda['Close'], label='Close Price')
+plt.title("NVIDIA Stock Price Trend (2024-2025)")
+plt.xlabel("Date")
+plt.ylabel("Close Price (USD)")
+plt.legend()
+plt.grid(True)
+plt.tight_layout()
+plt.show()
+
+# 打印最高价和最低价
+max_price = nvda['Close'].max()
+min_price = nvda['Close'].min()
+print(f"过去一年NVIDIA的最高收盘价为: {max_price:.2f} 美元")
+print(f"过去一年NVIDIA的最低收盘价为: {min_price:.2f} 美元")
