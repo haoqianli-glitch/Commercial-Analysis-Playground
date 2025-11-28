@@ -8,7 +8,7 @@
 * **背景：** 针对 AI 硬件龙头企业，追踪其过去一年的二级市场表现。
 * **技术栈：** `yfinance` (数据源), `matplotlib` (可视化), `pandas` (数据处理)
 * **分析结果：**
-    ![NVIDIA Stock Price 24-25]([NVIDIA_Chart.png](https://github.com/haoqianli-glitch/Commercial-Analysis-Playground/blob/520cf6bfa6acf740f7c9b695522c63558acbe746/%20NVIDIA_Chart.png))
+    ![NVIDIA Stock Price 24-25](NVIDIA_Chart.png](https://github.com/haoqianli-glitch/Commercial-Analysis-Playground/blob/520cf6bfa6acf740f7c9b695522c63558acbe746/%20NVIDIA_Chart.png))
     *股价在2025年11月达到了高峰，几乎是2025年Q1-Q2的两倍
 
 ## 技术栈 (Tech Stack)
